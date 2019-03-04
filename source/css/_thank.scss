@@ -1,0 +1,87 @@
+.thank {
+    &__content {
+        margin: 0 auto;
+    }
+
+    &__order-number {
+        text-align: center;
+        @extend %f_size_h3;
+        color: $c_dark;
+        margin-bottom: 24px;
+    }
+
+    .basket-card {
+        &__info {
+            &-number {
+                &-text {
+                    margin-right: 36px;
+                    @extend %f_size_num-b;
+                    color: $c_grey;
+                    position: relative;
+
+                    &:before {
+                        content: "×";
+                    }
+                }
+            }
+        }
+    }
+
+    .basket-page__product {
+        margin-bottom: 48px;
+    }
+
+    .basket__next {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        @extend %f_size_lead;
+        color: $c_dark;
+        margin-bottom: 48px;
+
+        &-paragraph {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+
+        &-continue {
+            margin-right: 12px;
+            display: block;
+            padding: 18px 29.71px;
+            background: $c_dark;
+            color: $c_white;
+            @extend %f_size_h5;
+            text-align: center;
+            @include transition(.25s);
+
+            &-text {
+                display: block;
+                min-width: 200.57px;
+            }
+
+            &:hover {
+                background: $c_cherry;
+            }
+        }
+
+        &-print {
+            border: 1px solid $c_grey;
+            padding: 17px 29.71px;
+            background: $c_white;
+
+            &-text {
+                display: block;
+                min-width: 154.29px;
+            }
+
+            &:hover {
+                border-color: $c_cherry;
+                color: $c_cherry;
+            }
+        }
+    }
+}

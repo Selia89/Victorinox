@@ -1,0 +1,654 @@
+.category-page.top-indent
+    .wrapper
+        ul.breadcrumbs.col-12.indent
+            li.breadcrumbs__item
+                a(href="index.html").breadcrumbs__link Главная
+            li.breadcrumbs__item
+                a(href="catalog.html").breadcrumbs__link Каталог
+            li.breadcrumbs__item
+                a(href="category.html").breadcrumbs__link Швейцарские Армейские ножи Victorinox
+            li.breadcrumbs__item Средние карманные ножи
+
+        h1.head-h1.col-8.indent Средние карманные ножи&nbsp
+            span.head-h1__quantity 139
+        .text-block.col-8.indent
+            p.text-block__paragraph.text-block__paragraph_big Это оригинальный швейцарский армейский нож. Даже 100 лет спустя каждый нож сохранил ДНК своих предков, которые совмещали функциональность и надежность. В наших ножах по-прежнему есть все необходимые для человека инструменты, а с годами мы добавили новые функции, отвечающие запросам сегодняшнего дня, но при этом мы остались верны традициям, на которых основан этот культовый продукт. Мы все еще по привычке называем их карманными ножами, но большую часть времени они будут проводить не в карманах, а ваших руках.
+
+        .catalog-block
+            form.filter.col-3.indent
+                .filter__head Фильтры
+                .filter__item
+                    .filter__item-head Инструменты
+                    .filter__item-wrapper
+                        .filter__item-block
+                            input(type="checkbox" id="ch-37" name="tool").filter__item-checkbox
+                            label(for="ch-37").filter__item-label Малое лезвие
+                        .filter__item-block
+                            input(type="checkbox" id="ch-38" name="tool").filter__item-checkbox
+                            label(for="ch-38").filter__item-label Штопор 
+                        .filter__item-block
+                            input(type="checkbox" id="ch-39" name="tool").filter__item-checkbox
+                            label(for="ch-39").filter__item-label Открывалка для бутылок
+                        .filter__item-block
+                            input(type="checkbox" id="ch-40" name="tool").filter__item-checkbox
+                            label(for="ch-40").filter__item-label Пинцет 
+                        .filter__item-block
+                            input(type="checkbox" id="ch-41" name="tool").filter__item-checkbox
+                            label(for="ch-41").filter__item-label Фиксирующее лезвие
+                        .filter__item-block
+                            input(type="checkbox" id="ch-42" name="tool").filter__item-checkbox
+                            label(for="ch-42").filter__item-label Интсрумент по уходу за ногтями
+                .filter__item
+                    .filter__item-head Цена
+                    .filter__item-wrapper
+                        .filter__item-price-inp-wrapper
+                            input(type="text", name="price-start", id="price", placeholder="От").filter__item-price-inp-1
+                            input(type="text", name="price-end", id="price2", placeholder="До").filter__item-price-inp-2
+                        .filter__item-price-slider#slider_price        
+                .filter__item
+                    .filter__item-head Акции
+                    .filter__item-wrapper
+                        .filter__item-block
+                            input(type="radio" id="ch-1" name="akcii" value="1").filter__item-checkbox
+                            label(for="ch-1").filter__item-label.filter__item-label_radio Алюминий
+                        .filter__item-block
+                            input(type="radio" id="ch-2" name="akcii" value="2").filter__item-checkbox
+                            label(for="ch-2").filter__item-label.filter__item-label_radio Дерево
+                        .filter__item-block
+                            input(type="radio" id="ch-3" name="akcii" value="3").filter__item-checkbox
+                            label(for="ch-3").filter__item-label.filter__item-label_radio Ореховое дерево
+                        .filter__item-block
+                            input(type="radio" id="ch-4" name="akcii" value="4").filter__item-checkbox
+                            label(for="ch-4").filter__item-label.filter__item-label_radio Пластик
+                        .filter__item-block
+                            input(type="radio" id="ch-5" name="akcii" value="5").filter__item-checkbox
+                            label(for="ch-5").filter__item-label.filter__item-label_radio Полированный алюминий Alox
+                        .filter__item-block
+                            input(type="radio" id="ch-6" name="akcii" value="6").filter__item-checkbox
+                            label(for="ch-6").filter__item-label.filter__item-label_radio Ребристый алюминий Alox
+
+                .filter__item
+                    .filter__item-head Цвет
+                    .filter__item-wrapper
+                        .filter__item-block
+                            input(type="checkbox" id="ch-31" name="material").filter__item-checkbox
+                            label(for="ch-31").filter__item-label Алюминий
+                        .filter__item-block
+                            input(type="checkbox" id="ch-32" name="material").filter__item-checkbox
+                            label(for="ch-32").filter__item-label Дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-33" name="material").filter__item-checkbox
+                            label(for="ch-33").filter__item-label Ореховое дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-34" name="material").filter__item-checkbox
+                            label(for="ch-34").filter__item-label Пластик
+                        .filter__item-block
+                            input(type="checkbox" id="ch-35" name="material").filter__item-checkbox
+                            label(for="ch-35").filter__item-label Полированный алюминий Alox
+                        .filter__item-block
+                            input(type="checkbox" id="ch-36" name="material").filter__item-checkbox
+                            label(for="ch-36").filter__item-label Ребристый алюминий Alox
+                .filter__item
+                    .filter__item-head Вес, гр
+                    .filter__item-wrapper
+                        .filter__item-block
+                            input(type="checkbox" id="ch-7" name="material").filter__item-checkbox
+                            label(for="ch-7").filter__item-label Алюминий
+                        .filter__item-block
+                            input(type="checkbox" id="ch-8" name="material").filter__item-checkbox
+                            label(for="ch-8").filter__item-label Дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-9" name="material").filter__item-checkbox
+                            label(for="ch-9").filter__item-label Ореховое дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-10" name="material").filter__item-checkbox
+                            label(for="ch-10").filter__item-label Пластик
+                        .filter__item-block
+                            input(type="checkbox" id="ch-11" name="material").filter__item-checkbox
+                            label(for="ch-11").filter__item-label Полированный алюминий Alox
+                        .filter__item-block
+                            input(type="checkbox" id="ch-12" name="material").filter__item-checkbox
+                            label(for="ch-12").filter__item-label Ребристый алюминий Alox
+                .filter__item
+                    .filter__item-head Высота, мм
+                    .filter__item-wrapper
+                        .filter__item-block
+                            input(type="checkbox" id="ch-13" name="material").filter__item-checkbox
+                            label(for="ch-13").filter__item-label Алюминий
+                        .filter__item-block
+                            input(type="checkbox" id="ch-14" name="material").filter__item-checkbox
+                            label(for="ch-14").filter__item-label Дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-15" name="material").filter__item-checkbox
+                            label(for="ch-15").filter__item-label Ореховое дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-16" name="material").filter__item-checkbox
+                            label(for="ch-16").filter__item-label Пластик
+                        .filter__item-block
+                            input(type="checkbox" id="ch-17" name="material").filter__item-checkbox
+                            label(for="ch-17").filter__item-label Полированный алюминий Alox
+                        .filter__item-block
+                            input(type="checkbox" id="ch-18" name="material").filter__item-checkbox
+                            label(for="ch-18").filter__item-label Ребристый алюминий Alox
+                .filter__item
+                    .filter__item-head Материал
+                    .filter__item-wrapper
+                        .filter__item-block
+                            input(type="checkbox" id="ch-19" name="material").filter__item-checkbox
+                            label(for="ch-19").filter__item-label Алюминий
+                        .filter__item-block
+                            input(type="checkbox" id="ch-20" name="material").filter__item-checkbox
+                            label(for="ch-20").filter__item-label Дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-21" name="material").filter__item-checkbox
+                            label(for="ch-21").filter__item-label Ореховое дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-22" name="material").filter__item-checkbox
+                            label(for="ch-22").filter__item-label Пластик
+                        .filter__item-block
+                            input(type="checkbox" id="ch-23" name="material").filter__item-checkbox
+                            label(for="ch-23").filter__item-label Полированный алюминий Alox
+                        .filter__item-block
+                            input(type="checkbox" id="ch-24" name="material").filter__item-checkbox
+                            label(for="ch-24").filter__item-label Ребристый алюминий Alox
+                .filter__item
+                    .filter__item-head Размер ножа
+                    .filter__item-wrapper
+                        .filter__item-block
+                            input(type="checkbox" id="ch-25" name="material").filter__item-checkbox
+                            label(for="ch-25").filter__item-label Алюминий
+                        .filter__item-block
+                            input(type="checkbox" id="ch-26" name="material").filter__item-checkbox
+                            label(for="ch-26").filter__item-label Дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-27" name="material").filter__item-checkbox
+                            label(for="ch-27").filter__item-label Ореховое дерево
+                        .filter__item-block
+                            input(type="checkbox" id="ch-28" name="material").filter__item-checkbox
+                            label(for="ch-28").filter__item-label Пластик
+                        .filter__item-block
+                            input(type="checkbox" id="ch-29" name="material").filter__item-checkbox
+                            label(for="ch-29").filter__item-label Полированный алюминий Alox
+                        .filter__item-block
+                            input(type="checkbox" id="ch-30" name="material").filter__item-checkbox
+                            label(for="ch-30").filter__item-label Ребристый алюминий Alox
+                
+                button(type="reset").filter__recet Сбросить фильтр
+                    
+            .product-block.col-9
+                .product-block__top
+                    .product-block__top-filter.indent Фильтры
+                    .select-block.indent
+                        select(name="sort").select
+                            option(value="hight-cost" selected).select__option По возрастанию цены
+                            option(value="low-cost").select__option По убыванию цены
+                            option(value="name").select__option По названию
+                ul.product-list
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-1.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-2.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-3.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-4.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-5.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-6.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-2.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-3.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-4.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-5.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-6.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+
+                    li.product-wrapper.col-4
+                        .product
+                            a(href="card.html").product__top-link
+                                .product__img-block
+                                    img(src="img/content/product/product-3.jpg" alt="").product__img
+                                .product__head-block
+                                    .product__head-block-name Huntsman
+                                    .product__head-block-code 1.3714.E8
+
+                            .product__color-block
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-red.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-blue.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-black.jpg").product__color-img
+                                .product__color
+                                    img(src="img/Content/Card/color-hz.jpg").product__color-img
+                                .product__color
+                                   img(src="img/Content/Card/color-red.jpg").product__color-img
+
+                            a(href="card.html").product__bottom-link
+                                .product__info
+                                    .product__info-item
+                                        .product__info-item-text Вес
+                                        .product__info-item-mean 97 гр
+                                    .product__info-item
+                                        .product__info-item-text Высота
+                                        .product__info-item-mean 21 мм
+                                    .product__info-item
+                                        .product__info-item-text Длина
+                                        .product__info-item-mean 91 мм
+                                .product__cost 223,50 руб.
+                                button.product__btn В корзину
+                    
+                        
+                .product-block__show-more.indent
+                    .product-block__show-more-wrapper
+                        .product-block__show-more-text Показать еще 12 товаров

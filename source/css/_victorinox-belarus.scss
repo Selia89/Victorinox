@@ -1,0 +1,55 @@
+.victorinox-belarus {
+    padding: 163px 0 68px 0;
+
+    &__content {
+        display: flex;
+    }
+    
+    &__menu {
+        @extend %f_size_h4;
+
+        .active {
+            color: $c_cherry;
+        }
+
+        &-item {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        margin-bottom: 48px;
+
+        &-item {
+
+            &-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: calc(50% - 24px);
+            z-index: 1;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+            background: url(../img/icon_arrow-left_small-white.svg) no-repeat rgba($c_cherry, .9);
+            background-position: center center; 
+        }
+
+        .next {
+            right: 0;
+            background: url(../img/icon_arrow-right_small-white.svg) no-repeat rgba($c_cherry, .9);
+            background-position: center center; 
+        }
+
+    }
+}

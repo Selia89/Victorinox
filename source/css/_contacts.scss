@@ -1,0 +1,52 @@
+.map {
+    height: 560px;
+    margin-bottom: 60px;
+}
+
+.contacts {
+    &__content {
+        margin: 0 auto;
+    }
+
+    &__phone-mail {
+        display: flex;
+        margin-bottom: 72px;
+    }
+
+    &__phone-block-text,
+    &__mail-block-text {
+        @extend %f_size_h2;
+        color: $c_cherry;
+    }
+
+    .form {
+        .head-h1 {
+            margin-bottom: 48px;
+        }
+
+        .complaint-pop-up {
+            &__input-block_mail {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.text {
+    margin-bottom: 48px;
+
+    &__block {
+        margin-bottom: 36px;
+    }
+
+    &__paragraph {
+        @extend %f_size_text;
+        
+        &_head {
+            @extend %f_size_h4;
+            color: $c_dark;
+            margin-bottom: 4px;
+        }
+    }
+}

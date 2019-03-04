@@ -1,0 +1,74 @@
+mixin footer_list(value)
+    ul.footer__list.col-3.indent
+        for name in value
+            li.footer__list-item
+                a(href="#").footer__list-item-link= name
+        
+mixin border()
+    .col-12.indent
+        .border
+
+footer.footer
+    .wrapper
+        +border()
+        .footer__top-block
+            +footer_list(["Каталог", "Армейские ножи", "Кухонные и профессиональные ножи", "Багаж", "Новинки", "Спецпредложения", "Распродажа"])
+            +footer_list(["О компании", "Новости", "Оплата и доставка", "Гарантия и сервис", "Карта клиента", "Частые вопросы", "Купить оптом", "Контакты"])
+
+            .footer__top-block-column3.col-3.indent    
+                ul.footer__list
+                    li.footer__list-item
+                        a(href="#").footer__list-item-link Наши магазины
+                    li.footer__list-item
+                        a(href="#").footer__list-item-link ТЦ Замок
+                    li.footer__list-item
+                        a(href="#").footer__list-item-link ТЦ Галерея Минск
+                    li.footer__list-item
+                        a(href="#").footer__list-item-link ТЦ Dana Mall
+                button.footer__top-block-column3-btn.COMPLAINT_open Пожаловаться
+                
+            .footer__top-block-column4.col-3.indent
+                .footer__top-block-column4-description
+                    h6.footer__top-block-column4-head Подпишитесь на свежие новости
+                    form.footer__top-block-column4-input-block
+                        input(type="email" name="email" placeholder="Ваш e-mail").footer__top-block-column4-input
+                        button.footer__top-block-column4-btn
+                    .footer__top-block-column4-small-text Вводдя свой E-mail Вы даете согласие на обработку ваших персональных данных.
+
+                .footer__top-block-column4-social-wrapper
+                    .footer__top-block-column4-social-head.footer__top-block-column4-head_soc-margin Следите за нами в соцсетях:
+                    .footer__top-block-column4-social
+                        a(href="#").footer__top-block-column4-social-fb
+                        a(href="#").footer__top-block-column4-social-twitter
+                        a(href="#").footer__top-block-column4-social-youtube
+        +border()
+        .footer__bottom-block
+            .footer__bottom-block-left.col-8.indent Мы используем файлы «cookie» для функционирования сайта.<br>Если вас это не устраивает, пожалуйста, покиньте сайт.
+            .footer__bottom-block-right.col-4.indent Разработка сайта — 
+                a(href="#").footer__bottom-block-right-link Cian.space
+
+    #COMPLAINT.complaint-pop-up
+        button.COMPLAINT_close.complaint-pop-up__close
+        .complaint-pop-up__head Пожаловаться
+        .complaint-pop-up__text Мы стремимся к тому, чтобы предоставлять вам максимально возможный уровень сервиса. Если у вас возникли какие-либо трудности, не стесняйтесь сообщить нам об этом —<br> мы обязательно обработаем сообщение.
+
+        form.complaint-pop-up__wrapper
+            .complaint-pop-up__input-block
+                input(type="text" name="name")#in-1.complaint-pop-up__input
+                label(for="in-1").complaint-pop-up__label Представьтесь
+
+            .complaint-pop-up__tel-mail-block
+                .complaint-pop-up__input-block.complaint-pop-up__input-block_phone
+                    input(type="text" name="phone")#in-2.complaint-pop-up__input
+                    label(for="in-2").complaint-pop-up__label Телефон
+                .complaint-pop-up__input-block.complaint-pop-up__input-block_mail
+                    input(type="text" name="email")#in-3.complaint-pop-up__input
+                    label(for="in-3").complaint-pop-up__label E-mail
+
+            .complaint-pop-up__input-block
+                textarea(name="message" rows="3")#in-4.complaint-pop-up__input
+                label(for="in-4").complaint-pop-up__label Сообщение
+
+            .complaint-pop-up__btn-wrapper
+                button.complaint-pop-up__btn 
+                    span.complaint-pop-up__btn-text Отправить    

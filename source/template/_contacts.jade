@@ -1,0 +1,57 @@
+.contacts.top-indent
+    .wrapper
+        ul.breadcrumbs.col-12.indent
+            li.breadcrumbs__item
+                a(href="index.html").breadcrumbs__link Главная
+            li.breadcrumbs__item
+                a(href="index.html").breadcrumbs__link Компания
+            li.breadcrumbs__item Контакты
+
+        h1.head-h1.col-8.indent Контакты
+
+        .map.indent
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9af2acfa9ac27a4b987e53c9732d0b3a9852f48d233c2ab257ab194d1e8611b3&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>                                                
+
+        .contacts__content.col-8
+            .text.indent
+                .text__block
+                    h4.text__paragraph_head Адреса для почтовых отправлений
+                    p.text__paragraph г. Минск, ул. Первомайская, дом 4, комната №09
+                .text__block
+                    h4.text__paragraph_head Коротко о нас
+                    p.text__paragraph Владелец магазина Торговое Унитарное предприятие «СвисТайм-Бел». Свидетельство о регистрации № 190732239 УНП 190732239 выдано 13.10.2014 г. Минским городским исполнительным комитетом.
+                .text__block
+                    h4.text__paragraph_head Оформление заказа
+                    p.text__paragraph Осуществить заказ вы можете по указанным контактным мобильным телефонам либо используя систему заказа товара в нашем интернет-магазине. В пункте "Ваш комментарий" опишите свои дополнительные требования к заказу.
+                .text__block
+                    h4.text__paragraph_head Книга замечаний
+                    p.text__paragraph Книга замечаний и предложений находится по адресу:<br> г. Минск, ул. Суражская 10, офис № 18
+
+            .contacts__phone-mail
+                .contacts__phone-block.col-6.indent
+                    h4.text__paragraph_head Позвоните нам:
+                    a(href="tel:+375447401111").contacts__phone-block-text +375 44 740-11-11
+
+                .contacts__mail-block.col-6.indent
+                    h4.text__paragraph_head Напишите нам:
+                    a(href="mailto:info@victorinox.by").contacts__mail-block-text info@victorinox.by
+
+            .form.indent
+                .head-h1 Свяжитесь с нами
+
+                form.complaint-pop-up__wrapper
+                    .complaint-pop-up__input-block
+                        input(type="text" name="name")#in-1.complaint-pop-up__input
+                        label(for="in-1").complaint-pop-up__label Представьтесь
+
+                    .complaint-pop-up__input-block.complaint-pop-up__input-block_mail
+                        input(type="text" name="email")#in-3.complaint-pop-up__input
+                        label(for="in-3").complaint-pop-up__label E-mail
+
+                    .complaint-pop-up__input-block
+                        textarea(name="message" rows="6")#in-4.complaint-pop-up__input
+                        label(for="in-4").complaint-pop-up__label Сообщение
+
+                    .complaint-pop-up__btn-wrapper
+                        button.complaint-pop-up__btn 
+                            span.complaint-pop-up__btn-text Отправить   

@@ -1,0 +1,33 @@
+.delivery {
+    &__content {
+        display: flex;
+    }
+
+    &__text {
+        .text-area {
+            margin-bottom: 60px;
+
+            &__paragraph {
+                &_bold {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .advantages {
+            width: 100%;
+        }
+    }
+}
+
+.left-menu {
+    @extend %f_size_h4;
+
+    &__item {
+        margin-bottom: 16px;
+    }
+
+    .active {
+        color: $c_cherry;
+    }
+}

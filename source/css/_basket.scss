@@ -1,0 +1,197 @@
+.basket {
+
+    &__content {
+        display: flex;
+    }
+
+    &__promocode {
+        margin-bottom: 24px;
+
+        &-wrapper {
+            margin-bottom: 24px;
+            display: flex;
+        }
+
+        input {
+            border: 1px solid rgba($c_dark_grey, .2);
+            border-right: none;
+        }
+
+        &-btn {
+            padding: 11px 21.71px;
+            color: $c_cherry;
+            background: $c_white;
+            border: 1px solid $c_cherry;
+
+            &-text {
+                display: block;
+                min-width: 146.57px;
+            }
+
+            &:hover {
+                background: $c_cherry;
+                color: $c_white;
+            }
+        }
+    }
+
+    &__next {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-cost {
+            display: flex;
+            align-items: baseline;
+            color: $c_dark;
+
+            &-text {
+                @extend %f_size_lead;
+                margin-right: 12px;
+            }
+
+            &-number {
+                @extend %f_size_num-b;
+            }
+        }
+
+        &-btn {
+            padding: 18px 32px;
+            background: $c_dark;
+            color: $c_white;
+            text-align: center;
+            @include transition(.25s);
+            @extend %f_size_h5;
+
+            &-text {
+                min-width: 216px;
+                display: block;
+            }
+
+            &:hover {
+                background: $c_cherry;
+            }
+        }
+    }
+}
+
+.basket-page {
+
+    &__product {
+        margin-bottom: 24px;
+    }
+
+    .basket-card {
+        
+        &__wrapper {
+            display: flex;
+            padding: 24px 0;
+        }
+
+        &__img {
+            width: 100%/8*3;
+
+            &-item {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__info {
+            width: 100%/8*5;
+
+            &-top {
+                margin-bottom: 36px;
+            }
+
+            &-head {
+                @extend %f_size_h3;
+                color: $c_dark;
+                margin-bottom: 12px;
+            }
+
+            &-number {
+                display: flex;
+                align-items: center;
+                margin-bottom: 48px;
+            }
+
+            &-right {
+                display: flex;
+                align-items: baseline;
+
+                &-price {
+                    @extend %f_size_num-b;
+                    margin-right: 24px;
+                    color: $c_dark;
+
+                    &-old {
+                        @extend %f_size_text;
+                        text-decoration: line-through;
+                        color: rgba($c_dark_grey, .5);
+                    }
+                }
+            }
+        }
+
+        &__delete {
+            color: $c_cherry;
+            @include after(24px, 24px, icon_delete-red-bg, 0, 0);
+            cursor: pointer;
+            @extend %f_size_p;
+            padding: 0 32px 0 0;
+            background: none;
+        }
+
+        .number {
+            display: flex;
+            align-items: center;
+            margin-right: 36px;
+
+            &__input {
+                width: 60px;
+                border: none;
+                text-align: center;
+                @extend %f_size_num-b;
+                padding: 0;
+            }
+
+            &__minus,
+            &__plus {
+                width: 48px;
+                height: 48px;
+                border: 1px solid $c_soft_grey;
+                cursor: pointer;
+            }
+
+            &__minus {
+                @include before(24px, 24px, icon_minus, 12px, 12px);
+            }
+
+            &__plus {
+                @include before(24px, 24px, icon_plus, 12px, 12px);
+            }
+
+            .disabled {
+                &:before {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.left-point {
+    &__item {
+        @extend %f_size_h4;
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        color: rgba($c_dark_grey, .5);
+    }
+
+    .active {
+        color: $c_cherry;
+    }
+}

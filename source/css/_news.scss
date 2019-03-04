@@ -1,0 +1,93 @@
+.news {
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: block;
+        margin-bottom: 30px;
+
+        &-content {
+            border: 1px solid $c_soft_grey;
+            position: relative;
+            height: 100%;
+
+            &:hover {
+                box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        &-img {
+            max-height: 240px;
+            margin-bottom: 24px;
+            
+            &-pic {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-info {
+            padding: 0 30px 24px 30px;
+            max-height: 375px;
+            overflow: hidden;
+
+            &-head {
+                @extend %f_size_h4;
+                margin-bottom: 16px;
+            }
+
+            &-description {
+                @extend %f_size_p;
+                color: $c_dark_grey;
+                padding-bottom: 64px;
+            }
+
+            &-date {
+                @extend %f_size_p;
+                color: $c_grey;
+                position: absolute;
+                bottom: 24px;
+                left: 30px;
+            }
+        }
+    }
+}
+
+.tabs {
+    &__menu {
+        display: flex;
+        justify-content: center;
+        @extend %f_size_p;
+        margin-bottom: 30px;
+
+        &-item {
+            margin-left: 12px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        &-link {
+            display: block;
+            padding: 6px 16px;
+            background: $c_soft_grey;
+        }
+
+        .active {
+            background: $c_dark_grey;
+            color: $c_white;
+        }
+    }
+}
+
+@media all and (max-width: 1023px) {
+    .news {
+        &__item {
+            width: 50%;
+        }
+    }
+}

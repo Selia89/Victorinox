@@ -1,0 +1,97 @@
+.basket-02.top-indent
+    .wrapper
+        ul.breadcrumbs.col-12.indent
+            li.breadcrumbs__item
+                a(href="index.html").breadcrumbs__link Главная
+            li.breadcrumbs__item Корзина
+
+        h1.head-h1.col-8.indent Оформление заказа
+
+        .basket__content
+            .left-point.col-3.indent
+                ul.left-point__list
+                    li.left-point__item 
+                        a(href="basket.html").left-point__link 01. Корзина
+                    li.left-point__item
+                        a(href="basket-02.html").left-point__link.active  02. Личная информация
+
+            .basket-02-page.col-8
+                .basket-02__delivery
+                    h3.basket-02-page__head.indent Доставка
+
+                    .basket-02__tabs.indent
+                        .basket-02__tabs-item
+                            input(type="radio" id="tb-1" value="1" name="tab").basket-02__tabs-input
+                            label(for="tb-1").basket-02__tabs-label Доставка по Минску
+                            .basket-02__tabs-text Доставка осуществляется бесплатно курьером лично в руки. 100% предоплата товара. Срок доставки – от 2 до 5 рабочих дней с момента оплаты заказа.
+                                
+                        .basket-02__tabs-item
+                            input(type="radio" id="tb-2" value="2" name="tab" checked).basket-02__tabs-input
+                            label(for="tb-2").basket-02__tabs-label Доставка по Беларуси
+                            .basket-02__tabs-text Доставка осуществляется бесплатно курьером лично в руки. 100% предоплата товара. Срок доставки – от 2 до 5 рабочих дней с момента оплаты заказа.
+
+                    form.complaint-pop-up__wrapper
+                        .complaint-pop-up__line
+                            .complaint-pop-up__input-block.col-6.indent
+                                input(type="text" name="time")#basket-1.complaint-pop-up__input
+                                label(for="basket-1").complaint-pop-up__label Удобное время доставки
+
+                            .complaint-pop-up__input-block.col-6.indent
+                                input(type="text" name="address")#basket-2.complaint-pop-up__input
+                                label(for="basket-2").complaint-pop-up__label Адрес доставки
+
+                        .complaint-pop-up__input-block.indent
+                            textarea(name="comments" rows="6")#basket-3.complaint-pop-up__input
+                            label(for="basket-3").complaint-pop-up__label Комментарий
+
+                    .basket-02__pay
+                        h3.basket-02-page__head.indent Способ оплаты
+                        .basket-02__tabs.basket-02__tabs_pay.indent
+                            .basket-02__tabs-item
+                                input(type="radio" id="tb-3" value="1" name="tab-2").basket-02__tabs-input
+                                label(for="tb-3").basket-02__tabs-label Наличными
+                                .basket-02__tabs-text Оплата непосредственно после оформления заказа. Принимаются VISA и MasterCard всех банков. Карты Visa Electron и Maestro (с CVC-кодом) - по согласованию с выпустившим их банком
+                                    
+                            .basket-02__tabs-item
+                                input(type="radio" id="tb-4" value="2" name="tab-2" checked).basket-02__tabs-input
+                                label(for="tb-4").basket-02__tabs-label По безналичному расчету
+                                .basket-02__tabs-text Оплата непосредственно после оформления заказа. Принимаются VISA и MasterCard всех банков. Карты Visa Electron и Maestro (с CVC-кодом) - по согласованию с выпустившим их банком
+
+                            .basket-02__tabs-item
+                                input(type="radio" id="tb-5" value="2" name="tab-2" checked).basket-02__tabs-input
+                                label(for="tb-5").basket-02__tabs-label Пластиковой картой курьеру
+                                .basket-02__tabs-text Оплата непосредственно после оформления заказа. Принимаются VISA и MasterCard всех банков. Карты Visa Electron и Maestro (с CVC-кодом) - по согласованию с выпустившим их банком
+
+                            .basket-02__tabs-item
+                                input(type="radio" id="tb-6" value="2" name="tab-2" checked).basket-02__tabs-input
+                                label(for="tb-6").basket-02__tabs-label Он-лайн оплата картой Visa или MasterCard
+                                .basket-02__tabs-text Оплата непосредственно после оформления заказа. Принимаются VISA и MasterCard всех банков. Карты Visa Electron и Maestro (с CVC-кодом) - по согласованию с выпустившим их банком
+
+                            .basket-02__tabs-item
+                                input(type="radio" id="tb-7" value="2" name="tab-2" checked).basket-02__tabs-input
+                                label(for="tb-7").basket-02__tabs-label Картой рассрочки (Халва, Карта покупок)
+                                .basket-02__tabs-text Оплата непосредственно после оформления заказа. Принимаются VISA и MasterCard всех банков. Карты Visa Electron и Maestro (с CVC-кодом) - по согласованию с выпустившим их банком
+
+                    form.complaint-pop-up__wrapper.complaint-pop-up__person-info
+                        h3.basket-02-page__head.indent Личная информация
+                        .complaint-pop-up__input-block.indent
+                            input(type="text" name="name")#pay-3.complaint-pop-up__input
+                            label(for="pay-3").complaint-pop-up__label Представьтесь
+
+                        .complaint-pop-up__line
+                            .complaint-pop-up__input-block.col-6.indent
+                                input(type="email" name="email")#pay-1.complaint-pop-up__input
+                                label(for="pay-1").complaint-pop-up__label E-mail
+
+                            .complaint-pop-up__input-block.col-6.indent
+                                input(type="tel" name="phone")#pay-2.complaint-pop-up__input
+                                label(for="pay-2").complaint-pop-up__label Телефон
+
+                    .basket__next.indent
+                        .basket__next-cost
+                            .basket__next-cost-text Общая стоимость:
+                            .basket__next-cost-number 225,30 руб.
+                        a(href="thank.html").basket__next-btn
+                            span.basket__next-btn-text Оформить заказ
+
+                        

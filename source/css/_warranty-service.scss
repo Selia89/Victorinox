@@ -1,0 +1,49 @@
+.warranty-service {
+    &__content {
+        margin: 0 auto;
+    }
+
+    &__service-block {
+        .head-h1 {
+            margin-bottom: 12px;
+        }
+
+        &-address {
+            text-align: center;
+            @extend %f_size_p;
+            margin-bottom: 36px;
+        }
+
+        .text-area {
+
+            &__paragraph {
+                &_bold {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .contacts__phone-block {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__warranty-block {
+        .head-h1 {
+            margin-bottom: 36px;
+        }
+    }
+
+    &__img-block {
+        display: flex;
+
+        &-area {
+            &-pic {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    
+}

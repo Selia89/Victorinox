@@ -1,0 +1,83 @@
+mixin border()
+    .col-12.indent
+        .border
+
+.basket.top-indent
+    .wrapper
+        ul.breadcrumbs.col-12.indent
+            li.breadcrumbs__item
+                a(href="index.html").breadcrumbs__link Главная
+            li.breadcrumbs__item Корзина
+
+        h1.head-h1.col-8.indent Оформление заказа
+
+        .basket__content
+            .left-point.col-3.indent
+                ul.left-point__list
+                    li.left-point__item
+                        a(href="basket.html").left-point__link.active 01. Корзина
+                    li.left-point__item 
+                        a(href="basket-02.html").left-point__link 02. Личная информация
+
+            .basket-page.col-8
+                .basket-page__product
+                    +border()
+                    .basket-card
+                        .basket-card__wrapper
+                            a(href="card.html").basket-card__img.indent
+                                img(src="img/content/card/card-1.jpg" alt="").basket-card__img-item
+                            .basket-card__info.indent
+                                .basket-card__info-top
+                                    a(href="card.html").basket-card__info-head Нож перочинный Spartan Российская армия Victorinox 1.3603 ARMY
+                                    .basket-card__info-code Артикул: 0.9410.3
+                                .basket-card__info-number
+                                    .number
+                                        span.number__minus.disabled-minus
+                                        input(type="text" value="1").number__input
+                                        span.number__plus
+                                    .basket-card__info-right
+                                        .basket-card__info-right-price 72,50 руб.
+                                        .basket-card__info-right-price-old 72,50 руб.
+                                button.basket-card__delete Удалить
+                        +border()
+
+                    .basket-card
+                        .basket-card__wrapper
+                            a(href="card.html").basket-card__img.indent
+                                img(src="img/content/card/card-1.jpg" alt="").basket-card__img-item
+                            .basket-card__info.indent
+                                .basket-card__info-top
+                                    a(href="card.html").basket-card__info-head Нож перочинный Spartan Российская армия Victorinox 1.3603 ARMY
+                                    .basket-card__info-code Артикул: 0.9410.3
+                                .basket-card__info-number
+                                    .number
+                                        span.number__minus.disabled
+                                        input(type="text" value="1").number__input
+                                        span.number__plus
+                                    .basket-card__info-right
+                                        .basket-card__info-right-price 72,50 руб.
+                                        .basket-card__info-right-price-old 72,50 руб.
+                                button.basket-card__delete Удалить
+                        +border()
+
+                
+                form.basket__promocode
+                    div.basket__promocode-wrapper.indent
+                        input(type="text" name="promocode" placeholder="Промокод на скидку").basket__promocode-input
+                        button.basket__promocode-btn 
+                            span.basket__promocode-btn-text Применить
+                    +border()
+
+                .basket__next.indent
+                    .basket__next-cost
+                        .basket__next-cost-text Общая стоимость:
+                        .basket__next-cost-number 225,30 руб.
+                    a(href="basket-02.html").basket__next-btn
+                        span.basket__next-btn-text Продолжить оформление
+
+                
+
+                
+
+                
+                

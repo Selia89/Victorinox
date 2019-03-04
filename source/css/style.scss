@@ -1,0 +1,333 @@
+/* Fonts */
+$f_family_slab: 'Roboto Slab', serif;
+$f_family_condensed: 'Roboto Condensed', sans-serif;
+
+/* Font-size */
+$f_size_14: 14px;
+$f_size_16: 16px;
+$f_size_20: 20px;
+$f_size_24: 24px;
+$f_size_26: 26px;
+$f_size_36: 36px;
+$f_size_48: 48px;
+
+/*Line-height*/
+$line_height_18: 18px;
+$line_height_20: 20px;
+$line_height_24: 24px;
+$line_height_26: 26px;
+$line_height_28: 28px;
+$line_height_32: 32px;
+$line_height_34: 34px;
+$line_height_40: 40px;
+$line_height_42: 42px;
+$line_height_56: 56px;
+
+/* Color */
+$c_dark: #130C15;
+$c_dark_grey: #4D5150;
+$c_grey: #A6A8A7;
+$c_soft_grey: #F2F2F2;
+$c_cherry: #AF1C37;
+$c_green: #219653;
+$c_white: #ffffff;
+$c_black: #000000;
+
+/* module */
+$module: 30px;
+
+.col-1 {
+    width: 100%/12;
+}
+
+.col-2 {
+    width: 100%/6;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 100%/12*4;
+}
+
+.col-5 {
+    width: 100%/12*5;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 100%/12*7;
+}
+
+.col-8 {
+    width: 100%/12*8;
+}
+
+.col-9 {
+    width: 100%/12*9;
+}
+
+.col-10 {
+    width: 100%/12*10;
+}
+
+.col-11 {
+    width: 100%/12*11;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.indent {
+    padding: 0 $module/2;
+}
+
+body {
+    color: $c_dark_grey;
+    font-size: $f_size_16;
+    line-height: $line_height_24;
+    @extend %f_size_p;
+
+    &.disabled-scroll {
+    	overflow: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $c_dark;
+}
+
+.border {
+    border-top: 1px solid rgba($c_dark_grey, .2);
+}
+
+.top-indent {
+    padding: 163px 0 96px 0;
+}
+
+@media all and (max-width: 1023px) {
+    .top-indent {
+        padding: 92px 0 96px 0;
+    }
+}
+
+.head-h1 {
+    @extend %f_size_h1;
+    text-align: center;
+    color: $c_dark;
+    margin: 0 auto 36px;
+
+    &__quantity {
+        color: $c_grey;
+    }
+}
+
+input {
+    @extend %f_size_p;
+    padding: 11px 20px;
+    border: 1px solid $c_soft_grey;
+    width: 100%;
+
+    &:focus {
+        border: 1px solid $c_grey;
+    }
+}
+
+@mixin font($size, $family, $line-height) {
+    font: {
+        size: $size;
+        family: $family;
+    }
+    line-height: $line-height;
+}
+
+%f_size_h1 {
+    @include font ($f_size_48, $f_family_slab, $line_height_56);
+}
+
+%f_size_h2 {
+    @include font ($f_size_36, $f_family_slab, $line_height_40);
+}
+
+%f_size_h3 {
+    @include font ($f_size_26, $f_family_slab, $line_height_32);
+}
+
+%f_size_h4 {
+    @include font ($f_size_20, $f_family_slab, $line_height_28);
+}
+
+%f_size_h5 {
+    @include font ($f_size_16, $f_family_slab, $line_height_24);
+}
+
+%f_size_h6 {
+    @include font ($f_size_16, $f_family_condensed, $line_height_24);
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+%f_size_lead {
+    @include font ($f_size_20, $f_family_condensed, $line_height_26);
+    letter-spacing: 0.01em;
+}
+
+%f_size_p {
+    @include font ($f_size_16, $f_family_condensed, $line_height_24);
+    letter-spacing: 0.01em;
+}
+
+%f_size_small {
+    @include font ($f_size_14, $f_family_condensed, $line_height_20);
+    letter-spacing: 0.01em;
+}
+
+%f_size_button {
+    @include font ($f_size_16, $f_family_slab, $line_height_24);
+}
+
+%f_size_price {
+    @include font ($f_size_26, $f_family_condensed, $line_height_32);
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+%f_size_filter_b {
+    @include font ($f_size_20, $f_family_condensed, $line_height_28);
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+%f_size_text {
+    @include font ($f_size_20, $f_family_condensed, $line_height_28);
+    letter-spacing: 0.01em;
+}
+
+%f_size_text-area {
+    @include font ($f_size_26, $f_family_condensed, $line_height_34);
+    letter-spacing: 0.01em;
+}
+
+%f_size_num-b {
+    @include font ($f_size_36, $f_family_condensed, $line_height_42);
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+@mixin before($width, $height, $icon-name, $top, $left) {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: $width;
+        height: $height;
+        background: url("../img/" + $icon-name + ".svg") no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: $top;
+        left: $left;
+        @include transition(.25s);
+    }
+}
+
+@mixin after($width, $height, $icon-name, $top, $left) {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: $width;
+        height: $height;
+        background: url("../img/" + $icon-name + ".svg") no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: $top;
+        right: $left;
+        @include transition(.25s);
+    }
+}
+
+@mixin transition($time) {
+    transition: $time ease;
+}
+
+button {
+    @extend %f_size_h5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include transition(.25s);
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+@media all and (max-width: 1280px) {
+    .wrapper {
+        padding: 0 33px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .wrapper {
+        padding: 0 21px;
+    }
+}
+
+@media all and (max-width: 1023px) {
+    .head-h1 {
+        font-family: $f_family_slab;
+        line-height: $line_height_40;
+        font-size: $f_size_36;
+        margin: 0 auto 24px;
+    }
+
+    .top-indent {
+        padding: 104px 0 50px 0;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .wrapper {
+        padding: 0 3px;
+    }
+
+    .head-h1 {
+        line-height: $line_height_32;
+        font-size: $f_size_26;
+        margin: 0 auto 18px !important;
+    }
+
+    .top-indent {
+        padding: 96px 0 50px 0;
+    }
+}
+
+@import "header";
+@import "index";
+@import "catalog";
+@import "category";
+@import "category-page";
+@import "card";
+@import "news";
+@import "news-card";
+@import "contacts";
+@import "shops";
+@import "warranty-service";
+@import "delivery";
+@import "victorinox-belarus";
+@import "faq";
+@import "basket";
+@import "basket-02";
+@import "thank";
+@import "pay";
+@import "footer";

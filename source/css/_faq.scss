@@ -1,0 +1,54 @@
+.faq {
+    &__content {
+        display: flex;
+    }
+
+    .tabs__menu {
+        margin-bottom: 24px;
+        justify-content: flex-start;
+    }
+
+    &__section {
+        margin-bottom: 48px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        &-head {
+            @extend %f_size_h3;
+            margin-bottom: 24px;
+        }
+
+        &-list {
+            border-top: 1px solid rgba($c_dark_grey, .2);
+        }
+
+        &-item {
+            border-bottom: 1px solid rgba($c_dark_grey, .2);
+            padding: 16px 0 15px 0;
+        }
+
+        &-question {
+            @extend %f_size_filter_b;
+            cursor: pointer;
+            @include after(28px, 28px, icon_expand, 0, 0);
+        }
+
+        .ui-state-active {
+            .faq__section-question {
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &-answer {
+            @extend %f_size_text;
+
+            &-text {
+                padding: 12px 0 27px 0;
+            }
+        }
+    }
+}

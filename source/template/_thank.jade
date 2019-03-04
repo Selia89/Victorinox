@@ -1,0 +1,62 @@
+mixin border()
+    .col-12.indent
+        .border
+
+.thank.top-indent
+    .wrapper
+        ul.breadcrumbs.col-12.indent
+            li.breadcrumbs__item
+                a(href="index.html").breadcrumbs__link Главная
+            li.breadcrumbs__item Корзина
+
+        h1.head-h1.col-8.indent Спасибо, ваш заказ принят!
+
+        .thank__content.col-8
+            h3.thank__order-number.indent Заказ №28012019 / 2
+
+            .basket-page
+                .basket-page__product
+                    +border()
+                    .basket-card
+                        .basket-card__wrapper
+                            a(href="card.html").basket-card__img.indent
+                                img(src="img/content/card/card-1.jpg" alt="").basket-card__img-item
+                            .basket-card__info.indent
+                                .basket-card__info-top
+                                    a(href="card.html").basket-card__info-head Нож перочинный Spartan Российская армия Victorinox 1.3603 ARMY
+                                    .basket-card__info-code Артикул: 0.9410.3
+                                .basket-card__info-number
+                                    .basket-card__info-number-text 1
+                                    .basket-card__info-right
+                                        .basket-card__info-right-price 72,50 руб.
+                        +border()
+
+                    .basket-card
+                        .basket-card__wrapper
+                            a(href="card.html").basket-card__img.indent
+                                img(src="img/content/card/card-1.jpg" alt="").basket-card__img-item
+                            .basket-card__info.indent
+                                .basket-card__info-top
+                                    a(href="card.html").basket-card__info-head Нож перочинный Spartan Российская армия Victorinox 1.3603 ARMY
+                                    .basket-card__info-code Артикул: 0.9410.3
+                                .basket-card__info-number
+                                    .basket-card__info-number-text 1
+                                    .basket-card__info-right
+                                        .basket-card__info-right-price 72,50 руб.
+                        +border()
+
+            .basket__next.indent
+                .basket__next-cost
+                    .basket__next-cost-text Общая стоимость:
+                    .basket__next-cost-number 225,30 руб.
+
+            .thank__text.indent
+                .thank__text-paragraph Оплата производится наличными деньгами в белорусских рублях в момент получения заказа.
+                .thank__text-paragraph Заказ будет доставлен по адресу: Минск, ул. Каменногорская 12, 123<br> Телефон для связи: +375 29 310-50-23
+                .thank__text-paragraph В ближайшее время с вами свяжется наш менеджер для подтвеждения заказа.
+
+            .thank__btn.indent
+                a(href="catalog.html").thank__btn-continue
+                    .thank__btn-continue-text Продолжить покупки
+                button.thank__btn-print
+                    .thank__btn-print-text Распечатать

@@ -1,0 +1,108 @@
+.pay {
+
+    &__content {
+        display: flex;
+    }
+
+    .pay-card {
+        margin-bottom: 36px;
+
+        &__item {
+           display: inline-block;
+            vertical-align: middle;
+            margin: 0 12px 12px 0;
+        }
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text-area {
+        &__paragraph {
+            margin-bottom: 24px;
+
+            &_big {
+                margin-bottom: 36x;
+            }
+        }
+    }
+
+    .pay__paragraph {
+        margin-bottom: 24px;
+    }
+
+    &__head {
+        @extend %f_size_h6;
+    }
+
+    &__paragraph {
+        @extend %f_size_p;
+    }
+
+    &__cash {
+        margin-bottom: 48px;
+    }
+
+    &__plastic-card {
+        margin-bottom: 48px;
+
+        .pay__head {
+            margin-bottom: 12px;
+        }
+
+        &-img {
+            border: 1px solid $c_soft_grey;
+            height: 96px;
+            width: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+            padding: 8px 24px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &-block {
+                display: flex;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__online {
+        margin-bottom: 48px;
+
+        .pay__head {
+            margin-bottom: 12px;
+        }
+
+        &-img {
+            border: 1px solid $c_soft_grey;
+            height: 96px;
+            width: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 26px 24px;
+
+            &-item {
+                width: 100%;
+                height: auto;
+            }
+
+            &-block {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__check {
+        .pay__paragraph {
+            margin-bottom: 0;
+        }
+    }
+}
