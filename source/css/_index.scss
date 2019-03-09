@@ -334,7 +334,7 @@
 
 @media all and (max-width: 767px) {
     .main {
-        padding: 84px 0 96px 0;
+        padding: 84px 0 96px 0 !important;
 
         &__slider {
             margin-bottom: 20px;

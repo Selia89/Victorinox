@@ -31,7 +31,7 @@
 
         &-info {
             padding: 0 30px 24px 30px;
-            max-height: 375px;
+            //max-height: 375px;
             overflow: hidden;
 
             &-head {
@@ -58,13 +58,25 @@
 
 .tabs {
     &__menu {
-        display: flex;
-        justify-content: center;
+        //display: flex;
+        //justify-content: center;
+        //margin: 0 auto;
+        text-align: center;
         @extend %f_size_p;
         margin-bottom: 30px;
 
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        &-wrapper {
+            width: 100%;
+            max-width: 1346px;
+        }
+
         &-item {
             margin-left: 12px;
+            display: inline-block;
 
             &:first-child {
                 margin-left: 0;
@@ -86,8 +98,57 @@
 
 @media all and (max-width: 1023px) {
     .news {
+        .wrapper {
+            padding: 0 24px;
+        }
+
         &__item {
             width: 50%;
+            margin-bottom: 24px;
+            padding: 0 12px;
         }
+    }
+
+    .tabs {
+        &__menu {
+            line-height: $line_height_24;
+            font-size: $f_size_12;
+            margin-bottom: 25px;
+
+            &-item {
+                margin-left: 10px;
+            }
+    
+            &-link {
+                padding: 4px 10px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 640px) {
+    .news {
+
+        .wrapper {
+            padding: 0 6px;
+        }
+
+        &__item {
+            width: 100%;
+            margin-bottom: 24px;
+            padding: 0 12px;
+
+            &-img {
+                overflow: hidden;
+                &-pic {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .breadcrumbs {
+        display: none;
     }
 }

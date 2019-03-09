@@ -297,11 +297,6 @@
             color: $c_white;
             @include transition(.25s); 
             width: 300px;
-
-            &:hover {
-                background: $c_cherry, rgba($c_dark, .5);
-                background-blend-mode: overlay;
-            }
         }
 
         &__left-block {
@@ -644,6 +639,25 @@
             &-link {
                 left: -69.29px;
                 bottom: -43px;
+            }
+        }
+
+        .basket-btn {
+            .wrapper {
+                padding: 0;
+            }
+
+            &__wrapper {
+                width: 100%;
+                padding: 0;
+            }
+    
+            &__link {
+                width: 100%;
+            }
+
+            &__left-block {
+                text-align: left;
             }
         }
     }

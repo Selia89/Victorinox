@@ -3,6 +3,7 @@ $f_family_slab: 'Roboto Slab', serif;
 $f_family_condensed: 'Roboto Condensed', sans-serif;
 
 /* Font-size */
+$f_size_12: 12px;
 $f_size_14: 14px;
 $f_size_16: 16px;
 $f_size_20: 20px;
@@ -292,7 +293,7 @@ button {
     }
 
     .top-indent {
-        padding: 104px 0 50px 0;
+        padding: 104px 0 50px 0 !important;
     }
 }
 
@@ -304,11 +305,11 @@ button {
     .head-h1 {
         line-height: $line_height_32;
         font-size: $f_size_26;
-        margin: 0 auto 18px !important;
+        margin: 0 auto 10px !important;
     }
 
     .top-indent {
-        padding: 96px 0 50px 0;
+        padding: 88px 0 50px 0 !important; 
     }
 }
 

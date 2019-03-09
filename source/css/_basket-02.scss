@@ -1,5 +1,14 @@
 .basket-02 {
 
+    .left-point__item {
+
+        &:first-child {
+            .left-point__link {
+                color: $c_dark;
+            } 
+        }
+    }
+
     &-page {
         &__head {
             @extend %f_size_h3;
@@ -81,7 +90,7 @@
         }
 
         &__person-info {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
     }
 

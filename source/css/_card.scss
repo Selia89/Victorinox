@@ -46,51 +46,30 @@
                     display: flex;
                     flex-wrap: wrap;
                     max-width: 372px;
-                    margin-bottom: 48px;
+                    margin-bottom: 36px;
                 }
 
                 &-item {
                     margin: 0 12px 12px 0;
+                    width: 36px;
+                    height: 36px;
+                    display: block;
+
+                    &-img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    &:hover {
+                        padding: 2px;
+                        border: 1px solid $c_cherry;
+                    }
+                }
+
+                .active {
                     padding: 2px;
-
-                    &-ch {
-                        display: none;
-
-                        &:checked+.card__top-block-right-color-item-label-wrap{
-                            outline: 2px solid $c_cherry;
-                            padding: 3px;
-
-                            &>label {
-                                width: 30px;
-                                height: 30px;
-                                @include before(24px, 24px, icon_check, 3px, 3px);
-                            }
-                        }
-                    }
-
-                    &-label {
-                        display: block;
-                        width: 36px;
-                        height: 36px;
-                        cursor: pointer;
-
-                        &-wrap {
-                            &:hover {
-                                outline: 1px solid $c_cherry;
-                                padding: 3px;
-
-                                &>label {
-                                    width: 30px;
-                                    height: 30px;
-                                }
-                            }
-                        }
-
-                        &-img {
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
+                    border: 2px solid $c_cherry;
+                    @include after(24px, 24px, icon_check, 4px, 4px);
                 }
             }
 
@@ -301,6 +280,7 @@
 
                 &-item {
                     margin-bottom: 30px;
+                    position: relative;
 
                     &-wrapper {
                         display: flex;
@@ -351,31 +331,50 @@
                         }
 
                         &-add {
+                            &-label {
+                                cursor: pointer;
+                            }
+                            
                             &-input {
                                 display: none;
 
                                 &:checked+label {
-                                    background: $c_soft_grey;
-                                    & .card__kit-tabs-content-item-info-add-label:after {
-                                        content: "";
+                                    &:after {
                                         background: url(../img/icon_check.svg) no-repeat $c_cherry;
                                         background-position: center center;
+                                    }      
+
+                                    &+.card__kit-tabs-content-item-wrapper {
+                                        background: $c_soft_grey;
+                                        border-color: $c_soft_grey;
+
+                                        &:hover {
+                                            background: $c_white;
+                                        }
                                     }
 
                                     &:hover {
-                                        background: $c_white;
-                                        border: 1px solid $c_soft_grey;
+                                        &+.card__kit-tabs-content-item-wrapper {
+                                            background: $c_white;
+                                        }
                                     }
-                                    
                                 }
                             }
 
                             &-label {
                                 line-height: 18px;
                                 font-size: 13px;
-                                position: relative;
+                                position: absolute;
+                                bottom: 19px;
+                                right: 28px;
                                 user-select: none;
                                 padding-right: 28px;
+
+                                &:hover {
+                                    &+.card__kit-tabs-content-item-wrapper {
+                                        border: 1px solid $c_grey;
+                                    }
+                                }
 
                                 &:after {
                                     content: "";
@@ -440,6 +439,7 @@
                 &-head {
                     max-width: 178px;
                     @extend %f_size_h5;
+                    color: $c_dark_grey;
                 }
             }
 
@@ -511,10 +511,21 @@
         }
     }
 
-    .slick-list {
-        padding: 0 8px 25px 8px;
-        //padding: 0 0 25px 0;
+    &__collection {
+        &-slider {
+            .slick-list  {
+                padding: 0 8px 25px 8px;
+            }
+        }
+
+        .product__color-block {
+            .slick-list  {
+                padding: 0;
+            }
+        }
     }
+
+    
 }
 
 .slider {

@@ -145,13 +145,8 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 	
-	$( function() {
-		$( "#tabs" ).tabs();
-	} );
-
-	$( function() {
-		$( "#tabs-kit" ).tabs();
-	} );
+	$( "#tabs" ).tabs();
+	$( "#tabs-kit" ).tabs();
 
 	$('.card__collection-slider').slick({
         slidesToShow: 4,
@@ -246,7 +241,10 @@ $(document).ready(function(){
 	
 	$('.filter__item').accordion({ 
 		collapsible: true,
-		active: false
+		active: false,
+		heightStyle: "content"
 	});
+
+	//$('.filter__item:first-child').show();
 
 });
